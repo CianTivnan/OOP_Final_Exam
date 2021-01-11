@@ -12,9 +12,7 @@ namespace OOP_Final_Exam
         public double InterestRate { get; set; }
 
         //constructors
-        public CurrentAccount() : base() { }
-
-        public CurrentAccount(string a, string b, double c, DateTime d) :base()
+        public CurrentAccount(string a, string b, double c, DateTime d) : base(a, b, c, d)
         {
             InterestRate = .03;
         }

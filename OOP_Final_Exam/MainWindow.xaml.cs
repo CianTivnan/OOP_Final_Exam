@@ -25,9 +25,32 @@ namespace OOP_Final_Exam
     /// </summary>
     public partial class MainWindow : Window
     {
+        public List<Account> Accounts = new List<Account>();
+        public List<Account> DisplayedAccounts = new List<Account>();
+
         public MainWindow()
         {
             InitializeComponent();
+
+            LoadAccounts();
+
+            DisplayAccounts();
+        }
+
+        public void LoadAccounts()
+        {
+            CurrentAccount ca1 = new CurrentAccount("John", "Smith", 12000, DateTime.Now);
+            Accounts.Add(ca1);
+            SavingsAccount sa1 = new SavingsAccount("John", "Smith", 12000, DateTime.Now);
+            Accounts.Add(sa1);
+
+            DisplayedAccounts.Add(ca1);
+            DisplayedAccounts.Add(sa1);
+        }
+
+        public void DisplayAccounts()
+        {
+            lbx_Accounts.ItemsSource = DisplayedAccounts;
         }
     }
 }

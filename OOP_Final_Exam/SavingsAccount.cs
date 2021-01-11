@@ -12,9 +12,7 @@ namespace OOP_Final_Exam
         public double InterestRate { get; set; }
 
         //constructors
-        public SavingsAccount() : base() { }
-
-        public SavingsAccount(string a, string b, double c, DateTime d) : base()
+        public SavingsAccount(string a, string b, double c, DateTime d) : base(a, b, c, d)
         {
             InterestRate = .06;
         }
