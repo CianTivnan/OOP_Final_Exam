@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="lbx_Accounts" HorizontalAlignment="Left" Height="275" Margin="51,105,0,0" VerticalAlignment="Top" Width="248"/>
-        <CheckBox x:Name="cbx_CurrentAc" Content="Current Accounts" HorizontalAlignment="Left" Margin="51,51,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="cbx_SavingsAc" Content="Savings Accounts" HorizontalAlignment="Left" Margin="187,54,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbx_Accounts" HorizontalAlignment="Left" Height="275" Margin="51,105,0,0" VerticalAlignment="Top" Width="248" SelectionChanged="lbx_Accounts_SelectionChanged"/>
+        <CheckBox x:Name="cbx_CurrentAc" Content="Current Accounts" HorizontalAlignment="Left" Margin="51,51,0,0" VerticalAlignment="Top" Checked="cbx_CurrentAc_Checked"/>
+        <CheckBox x:Name="cbx_SavingsAc" Content="Savings Accounts" HorizontalAlignment="Left" Margin="187,54,0,0" VerticalAlignment="Top" Checked="cbx_SavingsAc_Checked"/>
         <TextBlock x:Name="tblk_AcDetails" HorizontalAlignment="Left" Margin="352,92,0,0" TextWrapping="Wrap" Text="Account Details" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="352,130,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="352,151,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top"/>
@@ -23,8 +23,8 @@
         <TextBlock x:Name="tblk_AccountType" HorizontalAlignment="Left" Margin="513,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.059,0.247"/>
         <TextBlock x:Name="tblk_Balance" HorizontalAlignment="Left" Margin="513,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblk_InterestDate" HorizontalAlignment="Left" Margin="513,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:Name="btn_Deposit" Content="Deposit" HorizontalAlignment="Left" Margin="692,115,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btn_Withdraw" Content="Withdraw" HorizontalAlignment="Left" Margin="692,157,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.468,1.16"/>
-        <Button x:Name="btn_Interest" Content="Interest" HorizontalAlignment="Left" Margin="692,193,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.496,1.329"/>
+        <Button x:Name="btn_Deposit" Content="Deposit" HorizontalAlignment="Left" Margin="692,115,0,0" VerticalAlignment="Top" Width="75" Click="btn_Deposit_Click"/>
+        <Button x:Name="btn_Withdraw" Content="Withdraw" HorizontalAlignment="Left" Margin="692,157,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.468,1.16" Click="btn_Withdraw_Click"/>
+        <Button x:Name="btn_Interest" Content="Interest" HorizontalAlignment="Left" Margin="692,193,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.496,1.329" Click="btn_Interest_Click"/>
     </Grid>
 </Window>
