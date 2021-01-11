@@ -13,7 +13,6 @@
         <TextBlock x:Name="tblk_AcDetails" HorizontalAlignment="Left" Margin="352,92,0,0" TextWrapping="Wrap" Text="Account Details" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="352,130,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="352,151,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="352,172,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="352,220,0,0" TextWrapping="Wrap" Text="Account Type" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="352,241,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="352,262,0,0" TextWrapping="Wrap" Text="Interest Date" VerticalAlignment="Top"/>
@@ -21,9 +20,8 @@
         <TextBox x:Name="tbx_Transaction" HorizontalAlignment="Left" Height="23" Margin="513,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.075,0.478"/>
         <TextBlock x:Name="tblk_FName" HorizontalAlignment="Left" Margin="513,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.369,0.153"/>
         <TextBlock x:Name="tblk_LName" HorizontalAlignment="Left" Margin="513,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.599,1.137"/>
-        <TextBlock x:Name="tblk_Balance" HorizontalAlignment="Left" Margin="513,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblk_AccountType" HorizontalAlignment="Left" Margin="513,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.059,0.247"/>
-        <TextBlock x:Name="tblk_Balance2" HorizontalAlignment="Left" Margin="513,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tblk_Balance" HorizontalAlignment="Left" Margin="513,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock x:Name="tblk_InterestDate" HorizontalAlignment="Left" Margin="513,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Button x:Name="btn_Deposit" Content="Deposit" HorizontalAlignment="Left" Margin="692,115,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="btn_Withdraw" Content="Withdraw" HorizontalAlignment="Left" Margin="692,157,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.468,1.16"/>
